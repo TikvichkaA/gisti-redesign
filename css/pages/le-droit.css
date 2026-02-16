@@ -1,0 +1,235 @@
+/* ==========================================================================
+   Le Droit (Ressources juridiques) — GISTI Redesign
+   ========================================================================== */
+
+/* --- Page layout with tree sidebar --- */
+.droit-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .droit-layout {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+/* --- Tree navigation sidebar --- */
+.tree-nav {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border-top: 3px solid var(--color-primary);
+}
+
+.tree-nav__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.tree-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.tree-nav__item {}
+
+.tree-nav__link {
+  display: block;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: color var(--duration-fast) var(--ease-default),
+              background var(--duration-fast) var(--ease-default);
+}
+
+.tree-nav__link:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 95, 0.06);
+}
+
+.tree-nav__link--active {
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+  background: rgba(30, 58, 95, 0.08);
+}
+
+.tree-nav__sublist {
+  padding-left: var(--space-sm);
+  margin-top: var(--space-3xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.tree-nav__sublink {
+  display: block;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.tree-nav__sublink:hover {
+  color: var(--color-primary);
+}
+
+/* --- Tabs --- */
+.tabs {
+  margin-bottom: var(--space-lg);
+}
+
+.tabs__list {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--color-border-light);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabs__tab {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--duration-fast) var(--ease-default),
+              border-color var(--duration-fast) var(--ease-default);
+}
+
+.tabs__tab:hover {
+  color: var(--color-primary);
+}
+
+.tabs__tab[aria-selected="true"] {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.tabs__tab:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.tabs__panel {
+  display: none;
+  padding: var(--space-md) 0;
+}
+
+.tabs__panel[aria-hidden="false"] {
+  display: block;
+}
+
+/* --- Legal update card --- */
+.legal-update {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.legal-update:last-child {
+  border-bottom: none;
+}
+
+.legal-update__type {
+  flex-shrink: 0;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.legal-update__type--loi {
+  background: #e8eef6;
+  color: var(--color-primary);
+}
+
+.legal-update__type--decret {
+  background: #e0f0f4;
+  color: var(--color-secondary);
+}
+
+.legal-update__type--circulaire {
+  background: #fef3cd;
+  color: #856404;
+}
+
+.legal-update__type--jurisprudence {
+  background: #fee2e2;
+  color: var(--color-accent-dark);
+}
+
+.legal-update__title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  margin-bottom: var(--space-3xs);
+}
+
+.legal-update__title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.legal-update__title a:hover {
+  color: var(--color-primary);
+}
+
+.legal-update__meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.legal-update__ref {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-secondary);
+}
+
+/* --- Argumentaires --- */
+.argumentaire-card {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: var(--space-sm);
+}
+
+.argumentaire-card__title {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2xs);
+}
+
+.argumentaire-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+/* --- Dedicated search --- */
+.droit-search {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-lg);
+}

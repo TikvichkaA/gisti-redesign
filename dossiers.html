@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiers thématiques — GISTI</title>
+  <meta name="description" content="Tous les dossiers du GISTI : analyses thématiques sur le droit des étrangers, l'asile, la rétention, les droits sociaux et plus.">
+
+  <!-- Fonts (Google Fonts CDN — libre SIL OFL) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/dossier.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Alert Banner -->
+  <div class="alert-banner" role="alert">
+    <div class="container flex items-center justify-between">
+      <p>
+        <strong>Alerte :</strong> Nouvelles restrictions sur les titres de séjour —
+        <a href="article.html">lire notre analyse</a>
+      </p>
+      <button class="alert-banner__close" aria-label="Fermer l'alerte">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <!-- Logo -->
+      <a href="index.html" class="site-logo">
+        <img src="assets/img/logo-gisti.svg" alt="" class="site-logo__img" width="200" height="48">
+        <div>
+          <span class="site-logo__text">GISTI</span>
+          <span class="site-logo__tagline">Groupe d'information et de soutien des immigré·e·s</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="main-nav__item" data-mega-menu>
+          <a href="pratique.html" class="main-nav__link" aria-expanded="false" aria-haspopup="true">
+            Vos droits
+            <svg class="main-nav__chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="mega-menu" role="menu">
+            <div>
+              <p class="mega-menu__section-title">Ressources pratiques</p>
+              <a href="pratique.html" class="mega-menu__link" role="menuitem">
+                Guide pratique
+                <span class="mega-menu__link-desc">Démarches, modèles de recours, permanence</span>
+              </a>
+              <a href="pratique.html#asile" class="mega-menu__link" role="menuitem">
+                Guide de l'asile
+                <span class="mega-menu__link-desc">Disponible en 8 langues</span>
+              </a>
+              <a href="pratique.html#urgence" class="mega-menu__link" role="menuitem">
+                Urgence : un proche arrêté
+                <span class="mega-menu__link-desc">Que faire immédiatement</span>
+              </a>
+            </div>
+            <div>
+              <p class="mega-menu__section-title">Droit des étrangers</p>
+              <a href="le-droit.html" class="mega-menu__link" role="menuitem">
+                Actualité du droit
+                <span class="mega-menu__link-desc">Réglementation, jurisprudence</span>
+              </a>
+              <a href="pratique.html#modeles" class="mega-menu__link" role="menuitem">
+                Modèles de recours
+                <span class="mega-menu__link-desc">9 catégories de lettres-types</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-nav__item">
+          <a href="dossiers.html" class="main-nav__link" aria-current="page">Dossiers</a>
+        </div>
+
+        <div class="main-nav__item" data-mega-menu>
+          <a href="publications.html" class="main-nav__link" aria-expanded="false" aria-haspopup="true">
+            Publications
+            <svg class="main-nav__chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="mega-menu" role="menu">
+            <div>
+              <p class="mega-menu__section-title">Nos publications</p>
+              <a href="publications.html" class="mega-menu__link" role="menuitem">
+                Catalogue complet
+                <span class="mega-menu__link-desc">Notes pratiques, cahiers juridiques</span>
+              </a>
+              <a href="publication-detail.html" class="mega-menu__link" role="menuitem">
+                Plein Droit
+                <span class="mega-menu__link-desc">La revue du GISTI — 147+ numéros</span>
+              </a>
+            </div>
+            <div>
+              <p class="mega-menu__section-title">Commander</p>
+              <a href="boutique.html" class="mega-menu__link" role="menuitem">
+                Boutique
+                <span class="mega-menu__link-desc">Commander en ligne</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-nav__item">
+          <a href="formations.html" class="main-nav__link">Formations</a>
+        </div>
+
+        <div class="main-nav__item">
+          <a href="le-droit.html" class="main-nav__link">Le droit</a>
+        </div>
+
+        <div class="main-nav__item">
+          <a href="a-propos.html" class="main-nav__link">À propos</a>
+        </div>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="header-search-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a href="a-propos.html#soutenir" class="btn btn--accent btn--sm header-donate-btn">Faire un don</a>
+        <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Header Search Panel -->
+    <div class="header-search" role="search">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex-shrink:0;color:var(--color-text-muted)">
+        <circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="search" class="header-search__input" placeholder="Rechercher un article, un droit, un modèle…" aria-label="Rechercher sur le site">
+      <button class="header-search__close" aria-label="Fermer la recherche">&times;</button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile">
+    <a href="pratique.html" class="mobile-nav__link" data-mobile-submenu="mobile-sub-droits" aria-expanded="false">
+      Vos droits
+      <svg width="16" height="16" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+    <div class="mobile-nav__sub" id="mobile-sub-droits">
+      <a href="pratique.html" class="mobile-nav__sub-link">Guide pratique</a>
+      <a href="pratique.html#asile" class="mobile-nav__sub-link">Guide de l'asile</a>
+      <a href="pratique.html#urgence" class="mobile-nav__sub-link">Urgence : un proche arrêté</a>
+      <a href="le-droit.html" class="mobile-nav__sub-link">Actualité du droit</a>
+      <a href="pratique.html#modeles" class="mobile-nav__sub-link">Modèles de recours</a>
+    </div>
+
+    <a href="dossiers.html" class="mobile-nav__link" aria-current="page">Dossiers</a>
+
+    <a href="publications.html" class="mobile-nav__link" data-mobile-submenu="mobile-sub-pubs" aria-expanded="false">
+      Publications
+      <svg width="16" height="16" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+    <div class="mobile-nav__sub" id="mobile-sub-pubs">
+      <a href="publications.html" class="mobile-nav__sub-link">Catalogue</a>
+      <a href="publication-detail.html" class="mobile-nav__sub-link">Plein Droit</a>
+      <a href="boutique.html" class="mobile-nav__sub-link">Boutique</a>
+    </div>
+
+    <a href="formations.html" class="mobile-nav__link">Formations</a>
+    <a href="le-droit.html" class="mobile-nav__link">Le droit</a>
+    <a href="a-propos.html" class="mobile-nav__link">À propos</a>
+
+    <div class="mobile-nav__cta">
+      <a href="recherche.html" class="btn btn--outline btn--full">Rechercher</a>
+      <a href="a-propos.html#soutenir" class="btn btn--accent btn--full">Faire un don</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <nav aria-label="Fil d'Ariane">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb__item" aria-current="page">Dossiers</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Dossiers thématiques</h1>
+        <p class="page-header__subtitle">Le GISTI suit au long cours plusieurs problématiques liées aux droits des personnes étrangères. Chaque dossier rassemble analyses, communiqués, ressources pratiques et jurisprudence.</p>
+      </div>
+    </section>
+
+    <!-- Dossiers actifs -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Dossiers actifs</h2>
+
+        <div class="grid-auto">
+          <!-- Dossier 1 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Mineurs isolés étrangers</h3>
+            <p class="dossier-overview-card__desc">Protection, accueil, scolarisation et accès aux droits des mineurs non accompagnés arrivant en France. Suivi des réformes législatives et jurisprudence.</p>
+            <div class="dossier-overview-card__meta">
+              <span>42 articles</span>
+              <span>&middot;</span>
+              <time datetime="2024-02">MAJ février 2024</time>
+            </div>
+          </a>
+
+          <!-- Dossier 2 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Droit d'asile</h3>
+            <p class="dossier-overview-card__desc">Procédures de demande d'asile, recours devant la CNDA, conditions d'accueil, Dublin, réformes nationales et européennes du droit d'asile en France.</p>
+            <div class="dossier-overview-card__meta">
+              <span>87 articles</span>
+              <span>&middot;</span>
+              <time datetime="2024-02">MAJ février 2024</time>
+            </div>
+          </a>
+
+          <!-- Dossier 3 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Rétention et éloignement</h3>
+            <p class="dossier-overview-card__desc">Centres de rétention administrative, obligations de quitter le territoire français (OQTF), droits en rétention, recours contre l'éloignement forcé.</p>
+            <div class="dossier-overview-card__meta">
+              <span>63 articles</span>
+              <span>&middot;</span>
+              <time datetime="2024-01">MAJ janvier 2024</time>
+            </div>
+          </a>
+
+          <!-- Dossier 4 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Travail des étrangers</h3>
+            <p class="dossier-overview-card__desc">Autorisation de travail, régularisation par le travail (article L.435-1), droits sociaux et conventions collectives pour les travailleurs étrangers.</p>
+            <div class="dossier-overview-card__meta">
+              <span>38 articles</span>
+              <span>&middot;</span>
+              <time datetime="2023-12">MAJ décembre 2023</time>
+            </div>
+          </a>
+
+          <!-- Dossier 5 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Regroupement familial</h3>
+            <p class="dossier-overview-card__desc">Conditions d'accès au regroupement familial, procédures, refus et recours. Droit au séjour pour motif familial, vie privée et familiale.</p>
+            <div class="dossier-overview-card__meta">
+              <span>54 articles</span>
+              <span>&middot;</span>
+              <time datetime="2023-11">MAJ novembre 2023</time>
+            </div>
+          </a>
+
+          <!-- Dossier 6 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Droits sociaux</h3>
+            <p class="dossier-overview-card__desc">Accès aux prestations sociales, à la santé, au logement et aux allocations pour les personnes étrangères. Restrictions et recours possibles.</p>
+            <div class="dossier-overview-card__meta">
+              <span>71 articles</span>
+              <span>&middot;</span>
+              <time datetime="2024-01">MAJ janvier 2024</time>
+            </div>
+          </a>
+
+          <!-- Dossier 7 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Dématérialisation des préfectures</h3>
+            <p class="dossier-overview-card__desc">Face à la fermeture des guichets et l'obligation de prise de rendez-vous en ligne, analyse des obstacles et stratégies de recours juridiques.</p>
+            <div class="dossier-overview-card__meta">
+              <span>29 articles</span>
+              <span>&middot;</span>
+              <time datetime="2024-02">MAJ février 2024</time>
+            </div>
+          </a>
+
+          <!-- Dossier 8 -->
+          <a href="dossier.html" class="dossier-overview-card">
+            <span class="dossier-overview-card__overline">Dossier</span>
+            <h3 class="dossier-overview-card__title">Outre-mer</h3>
+            <p class="dossier-overview-card__desc">Spécificités du droit des étrangers dans les territoires ultramarins français : Mayotte, Guyane, Saint-Martin. Contrôles aux frontières et refoulements.</p>
+            <div class="dossier-overview-card__meta">
+              <span>46 articles</span>
+              <span>&middot;</span>
+              <time datetime="2023-10">MAJ octobre 2023</time>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archives -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Archives</h2>
+        <p class="text-muted mb-lg">Dossiers moins fréquemment mis à jour mais toujours accessibles pour consultation.</p>
+
+        <div class="grid-auto">
+          <!-- Archive 1 -->
+          <a href="dossier.html" class="dossier-overview-card dossier-overview-card--archive">
+            <span class="dossier-overview-card__overline">Archive</span>
+            <h3 class="dossier-overview-card__title">Réforme Dublin</h3>
+            <p class="dossier-overview-card__desc">Suivi historique du règlement Dublin et de ses réformes successives concernant la détermination de l'État responsable d'une demande d'asile.</p>
+            <div class="dossier-overview-card__meta">
+              <span>34 articles</span>
+              <span>&middot;</span>
+              <time datetime="2022-06">MAJ juin 2022</time>
+            </div>
+          </a>
+
+          <!-- Archive 2 -->
+          <a href="dossier.html" class="dossier-overview-card dossier-overview-card--archive">
+            <span class="dossier-overview-card__overline">Archive</span>
+            <h3 class="dossier-overview-card__title">Aide médicale d'État (AME)</h3>
+            <p class="dossier-overview-card__desc">Dossier sur l'accès aux soins des personnes sans titre de séjour via l'AME. Réformes, restrictions, et défense de ce dispositif essentiel.</p>
+            <div class="dossier-overview-card__meta">
+              <span>28 articles</span>
+              <span>&middot;</span>
+              <time datetime="2022-03">MAJ mars 2022</time>
+            </div>
+          </a>
+
+          <!-- Archive 3 -->
+          <a href="dossier.html" class="dossier-overview-card dossier-overview-card--archive">
+            <span class="dossier-overview-card__overline">Archive</span>
+            <h3 class="dossier-overview-card__title">Contrôles au faciès</h3>
+            <p class="dossier-overview-card__desc">Analyse des contrôles d'identité discriminatoires, actions contentieuses du GISTI et campagnes contre les pratiques policières abusives.</p>
+            <div class="dossier-overview-card__meta">
+              <span>19 articles</span>
+              <span>&middot;</span>
+              <time datetime="2021-11">MAJ novembre 2021</time>
+            </div>
+          </a>
+
+          <!-- Archive 4 -->
+          <a href="dossier.html" class="dossier-overview-card dossier-overview-card--archive">
+            <span class="dossier-overview-card__overline">Archive</span>
+            <h3 class="dossier-overview-card__title">Zones d'attente</h3>
+            <p class="dossier-overview-card__desc">Maintien en zone d'attente des personnes étrangères dans les ports et aéroports français. Droits, recours et jurisprudence historique.</p>
+            <div class="dossier-overview-card__meta">
+              <span>25 articles</span>
+              <span>&middot;</span>
+              <time datetime="2021-09">MAJ septembre 2021</time>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">GISTI</h3>
+          <p class="footer-col__desc">Groupe d'information et de soutien des immigré·e·s. Association loi 1901, créée en 1972, qui milite pour l'égal accès aux droits et combat les discriminations.</p>
+          <form class="newsletter-form newsletter-form--dark" aria-label="Inscription newsletter">
+            <input type="email" class="newsletter-form__input" placeholder="Votre email" aria-label="Adresse email pour la newsletter" required>
+            <button type="submit" class="btn btn--primary btn--sm">S'inscrire</button>
+          </form>
+        </div>
+
+        <!-- Col 2: Ressources -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">Ressources</h3>
+          <ul class="footer-col__list">
+            <li><a href="pratique.html" class="footer-col__link">Guide pratique</a></li>
+            <li><a href="pratique.html#asile" class="footer-col__link">Guide de l'asile</a></li>
+            <li><a href="pratique.html#modeles" class="footer-col__link">Modèles de recours</a></li>
+            <li><a href="le-droit.html" class="footer-col__link">Actualité du droit</a></li>
+            <li><a href="formations.html" class="footer-col__link">Formations</a></li>
+            <li><a href="publications.html" class="footer-col__link">Publications</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: L'association -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">L'association</h3>
+          <ul class="footer-col__list">
+            <li><a href="a-propos.html" class="footer-col__link">Qui sommes-nous</a></li>
+            <li><a href="a-propos.html#equipe" class="footer-col__link">L'équipe</a></li>
+            <li><a href="a-propos.html#soutenir" class="footer-col__link">Nous soutenir</a></li>
+            <li><a href="a-propos.html#transparence" class="footer-col__link">Transparence</a></li>
+            <li><a href="a-propos.html#contact" class="footer-col__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">Contact</h3>
+          <ul class="footer-col__list">
+            <li class="footer-col__link">3 villa Marcès</li>
+            <li class="footer-col__link">75011 Paris</li>
+            <li><a href="tel:+33143149160" class="footer-col__link">01 43 14 91 60</a></li>
+            <li><a href="mailto:gisti@gisti.org" class="footer-col__link">gisti@gisti.org</a></li>
+          </ul>
+          <p class="footer-col__desc" style="margin-top:var(--space-sm)">
+            <strong style="color:#fff">Permanence juridique</strong><br>
+            Mardi et jeudi, 15h-18h
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; GISTI 2024 — Tous droits réservés — Logiciel libre (SPIP)</p>
+        <div class="footer-bottom__links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Accessibilité</a>
+          <a href="#">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

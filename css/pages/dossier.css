@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Dossiers — GISTI Redesign
+   Overview (dossiers.html) + single dossier (dossier.html)
+   ========================================================================== */
+
+/* --- Dossier hero (single) --- */
+.dossier-hero {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: #fff;
+  padding: var(--space-2xl) 0 var(--space-xl);
+}
+
+.dossier-hero__overline {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a0c4e8;
+  margin-bottom: var(--space-xs);
+}
+
+.dossier-hero__title {
+  font-size: var(--text-5xl);
+  color: #fff;
+  margin-bottom: var(--space-xs);
+}
+
+.dossier-hero__desc {
+  font-size: var(--text-xl);
+  color: #cbd5e0;
+  max-width: 65ch;
+  margin-bottom: var(--space-md);
+}
+
+.dossier-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--text-sm);
+  color: #a0c4e8;
+}
+
+.dossier-hero__stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.dossier-hero__stat strong {
+  color: #fff;
+}
+
+/* --- Dossiers overview grid --- */
+.dossiers-section-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-2xs);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.dossier-overview-card {
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--duration-fast) var(--ease-default),
+              box-shadow var(--duration-fast) var(--ease-default);
+}
+
+.dossier-overview-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.dossier-overview-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2xs);
+}
+
+.dossier-overview-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  flex: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.dossier-overview-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding-top: var(--space-2xs);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* --- Dossier article list --- */
+.dossier-article {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.dossier-article:last-child {
+  border-bottom: none;
+}
+
+.dossier-article__date {
+  flex-shrink: 0;
+  min-width: 5rem;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding-top: 0.2em;
+}
+
+.dossier-article__title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+}
+
+.dossier-article__title a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.dossier-article__title a:hover {
+  color: var(--color-primary);
+}
+
+.dossier-article__type {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--space-3xs);
+}
+
+/* --- Related dossiers sidebar --- */
+.related-dossiers__link {
+  display: block;
+  padding: var(--space-2xs) var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.related-dossiers__link:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 95, 0.06);
+}
+
+/* --- Tag cloud --- */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+}
+
+.tag-cloud .tag {
+  font-size: var(--text-xs);
+}
+
+.tag-cloud .tag--lg {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}

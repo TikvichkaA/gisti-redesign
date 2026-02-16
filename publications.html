@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — GISTI</title>
+  <meta name="description" content="Revue Plein Droit, notes pratiques, cahiers juridiques : plus de 50 ans de publications sur le droit des étrangers et l'accueil des migrants.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/publications.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/img/logo-gisti.svg" alt="" class="site-logo__img" width="200" height="48">
+        <div>
+          <span class="site-logo__text">GISTI</span>
+          <span class="site-logo__tagline">Groupe d'information et de soutien des immigré·e·s</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="main-nav__item"><a href="pratique.html" class="main-nav__link">Vos droits</a></div>
+        <div class="main-nav__item"><a href="dossiers.html" class="main-nav__link">Dossiers</a></div>
+        <div class="main-nav__item"><a href="publications.html" class="main-nav__link main-nav__link--active">Publications</a></div>
+        <div class="main-nav__item"><a href="formations.html" class="main-nav__link">Formations</a></div>
+        <div class="main-nav__item"><a href="le-droit.html" class="main-nav__link">Le droit</a></div>
+        <div class="main-nav__item"><a href="a-propos.html" class="main-nav__link">À propos</a></div>
+      </nav>
+      <div class="header-actions">
+        <button class="header-search-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <a href="a-propos.html#soutenir" class="btn btn--accent btn--sm header-donate-btn">Faire un don</a>
+        <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span class="breadcrumb__current" aria-current="page">Publications</span>
+        </nav>
+        <h1 class="page-header__title">Publications</h1>
+        <p class="page-header__desc">Depuis plus de 50 ans, le GISTI édite des publications de référence sur le droit des étrangers : la revue <em>Plein Droit</em>, des notes pratiques et des cahiers juridiques pour accompagner les personnes étrangères et les professionnel·le·s dans leurs démarches.</p>
+      </div>
+
+      <!-- Featured publication -->
+      <section class="pub-featured" aria-label="Publication à la une">
+        <div class="pub-featured__cover">
+          <div class="pub-cover-placeholder">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+        </div>
+        <div class="pub-featured__content">
+          <span class="pub-type">Plein Droit n°140</span>
+          <h2 class="pub-featured__title">Frontières : la violence au quotidien</h2>
+          <p class="pub-featured__meta">Mars 2024</p>
+          <p class="pub-featured__desc">Des violences policières aux refoulements illégaux, en passant par les contrôles au faciès et les conditions indignes d'accueil, ce numéro explore les multiples formes de violence que subissent les personnes exilées aux frontières de l'Europe.</p>
+          <div class="pub-featured__actions">
+            <a href="publication-detail.html" class="btn btn--primary">Lire le sommaire</a>
+            <a href="boutique.html" class="btn btn--outline">Commander</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <div class="filter-bar__controls">
+          <div class="form-group">
+            <label for="filter-type" class="form-label">Type de publication</label>
+            <select id="filter-type" class="form-select" data-filter-select="type">
+              <option value="">Tous les types</option>
+              <option value="plein-droit">Plein Droit</option>
+              <option value="note-pratique">Note pratique</option>
+              <option value="cahier-juridique">Cahier juridique</option>
+              <option value="publication-collective">Publication collective</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="filter-year" class="form-label">Année</label>
+            <select id="filter-year" class="form-select" data-filter-select="year">
+              <option value="">Toutes les années</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn--ghost" data-filter-reset>Réinitialiser</button>
+        </div>
+        <p class="filter-bar__count"><span data-filter-count>96</span> publications</p>
+      </div>
+
+      <!-- Publications grid -->
+      <div class="grid-auto" data-filter-container>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;140</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Impossibles réparations</h3>
+              <span class="pub-card__meta">n&deg;140</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;139</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Les frontières albanaises de l’UE</h3>
+              <span class="pub-card__meta">n&deg;139</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;138</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Migrations, pourquoi tant de discours ?</h3>
+              <span class="pub-card__meta">n&deg;138</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;137</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Nationalité : distinguer pour évincer</h3>
+              <span class="pub-card__meta">n&deg;137</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;136</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Étrangères : liberté reproductive sous contrôle</h3>
+              <span class="pub-card__meta">n&deg;136</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;135</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Loi immigration : xénophobie, toute honte bue</h3>
+              <span class="pub-card__meta">n&deg;135</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;134</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Travailler au péril de sa santé</h3>
+              <span class="pub-card__meta">n&deg;134</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;133</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Le techno-contrôle des migrations</h3>
+              <span class="pub-card__meta">n&deg;133</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;132</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Racismes</h3>
+              <span class="pub-card__meta">n&deg;132</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;131</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Étrangers sous écrou</h3>
+              <span class="pub-card__meta">n&deg;131</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;130</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Mourir d’être étranger</h3>
+              <span class="pub-card__meta">n&deg;130</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+
+          <a href="publication-detail.html" class="pub-card" data-filter-item data-type="plein-droit" data-year="2025">
+            <div class="pub-card__cover-placeholder">Plein Droit<br>n&deg;129</div>
+            <div class="pub-card__body">
+              <span class="pub-card__type">Plein Droit</span>
+              <h3 class="pub-card__title">Étrangers mal jugés</h3>
+              <span class="pub-card__meta">n&deg;129</span>
+              <span class="pub-card__price">6 &euro;</span>
+            </div>
+          </a>
+</div>
+
+      <!-- Pagination -->
+      <nav class="pagination" aria-label="Pagination">
+        <a href="#" class="pagination__link pagination__link--disabled" aria-disabled="true">&larr; Précédent</a>
+        <div class="pagination__numbers">
+          <a href="#" class="pagination__number pagination__number--current" aria-current="page">1</a>
+          <a href="#" class="pagination__number">2</a>
+          <a href="#" class="pagination__number">3</a>
+          <a href="#" class="pagination__number">4</a>
+          <span class="pagination__ellipsis">…</span>
+          <a href="#" class="pagination__number">8</a>
+        </div>
+        <a href="#" class="pagination__link">Suivant &rarr;</a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">GISTI</h3>
+          <p class="footer-col__desc">Groupe d'information et de soutien des immigré·e·s. Association loi 1901 créée en 1972.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Ressources</h3>
+          <ul class="footer-col__list">
+            <li><a href="pratique.html" class="footer-col__link">Guide pratique</a></li>
+            <li><a href="le-droit.html" class="footer-col__link">Actualité du droit</a></li>
+            <li><a href="formations.html" class="footer-col__link">Formations</a></li>
+            <li><a href="publications.html" class="footer-col__link">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">L'association</h3>
+          <ul class="footer-col__list">
+            <li><a href="a-propos.html" class="footer-col__link">Qui sommes-nous</a></li>
+            <li><a href="a-propos.html#soutenir" class="footer-col__link">Nous soutenir</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Contact</h3>
+          <ul class="footer-col__list">
+            <li class="footer-col__link">3 villa Marcès, 75011 Paris</li>
+            <li><a href="tel:+33143149160" class="footer-col__link">01 43 14 91 60</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; GISTI 2024 — Logiciel libre (SPIP)</p>
+        <div class="footer-bottom__links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/filters.js"></script>
+</body>
+</html>

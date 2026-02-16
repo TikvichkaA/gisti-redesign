@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique — GISTI</title>
+  <meta name="description" content="Commandez les publications du GISTI : revue Plein Droit, notes pratiques, cahiers juridiques, guides thématiques et packs découverte.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/publications.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/img/logo-gisti.svg" alt="" class="site-logo__img" width="200" height="48">
+        <div>
+          <span class="site-logo__text">GISTI</span>
+          <span class="site-logo__tagline">Groupe d'information et de soutien des immigré·e·s</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="main-nav__item"><a href="pratique.html" class="main-nav__link">Vos droits</a></div>
+        <div class="main-nav__item"><a href="dossiers.html" class="main-nav__link">Dossiers</a></div>
+        <div class="main-nav__item"><a href="publications.html" class="main-nav__link">Publications</a></div>
+        <div class="main-nav__item"><a href="formations.html" class="main-nav__link">Formations</a></div>
+        <div class="main-nav__item"><a href="le-droit.html" class="main-nav__link">Le droit</a></div>
+        <div class="main-nav__item"><a href="a-propos.html" class="main-nav__link">À propos</a></div>
+      </nav>
+      <div class="header-actions">
+        <button class="header-search-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <a href="a-propos.html#soutenir" class="btn btn--accent btn--sm header-donate-btn">Faire un don</a>
+        <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+          <span class="breadcrumb__current" aria-current="page">Boutique</span>
+        </nav>
+        <h1 class="page-header__title">Boutique</h1>
+        <p class="page-header__desc">Commandez nos publications pour vous informer sur le droit des étrangers et soutenir l'action du GISTI. Chaque achat contribue à notre travail associatif.</p>
+      </div>
+
+      <!-- Featured subscription section -->
+      <section class="pub-featured" aria-label="Abonnement Plein Droit">
+        <div class="pub-featured__content">
+          <h2 class="pub-featured__title">Abonnez-vous à Plein Droit</h2>
+          <p class="pub-featured__desc">Notre revue trimestrielle analyse les politiques migratoires et défend les droits des personnes étrangères. 4 numéros par an, 48 pages par numéro.</p>
+          <div class="pub-featured__pricing">
+            <div class="pub-featured__price">
+              <span class="pub-featured__price-label">Tarif normal</span>
+              <span class="pub-featured__price-value">40 €/an</span>
+            </div>
+            <div class="pub-featured__price">
+              <span class="pub-featured__price-label">Tarif réduit</span>
+              <span class="pub-featured__price-value">30 €/an</span>
+            </div>
+            <div class="pub-featured__price">
+              <span class="pub-featured__price-label">Soutien</span>
+              <span class="pub-featured__price-value">60 €/an</span>
+            </div>
+          </div>
+          <a href="https://boutique.gisti.org/abonnement" class="btn btn--primary">S'abonner</a>
+        </div>
+        <div class="pub-featured__image">
+          <img src="assets/img/plein-droit-cover.jpg" alt="Couverture de la revue Plein Droit" width="400" height="520">
+        </div>
+      </section>
+
+      <!-- Category tiles section -->
+      <section class="section" aria-label="Nos collections">
+        <div class="section-header">
+          <h2 class="section-header__title">Nos collections</h2>
+          <p class="section-header__desc">Explorez nos différentes publications pour approfondir vos connaissances du droit des étrangers.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <a href="publications.html#plein-droit" class="category-card">
+            <h3 class="category-card__title">Plein Droit</h3>
+            <p class="category-card__desc">Revue trimestrielle, 147+ numéros depuis 1988. Analyses critiques des politiques migratoires.</p>
+            <span class="category-card__count">147 numéros</span>
+          </a>
+
+          <a href="publications.html#notes-pratiques" class="category-card">
+            <h3 class="category-card__title">Notes pratiques</h3>
+            <p class="category-card__desc">Guides thématiques accessibles pour comprendre et défendre vos droits au quotidien.</p>
+            <span class="category-card__count">25+ guides</span>
+          </a>
+
+          <a href="publications.html#cahiers-juridiques" class="category-card">
+            <h3 class="category-card__title">Cahiers juridiques</h3>
+            <p class="category-card__desc">Analyses approfondies du droit, jurisprudence et commentaires pour les professionnels.</p>
+            <span class="category-card__count">15+ cahiers</span>
+          </a>
+
+          <a href="publications.html#publications-collectives" class="category-card">
+            <h3 class="category-card__title">Publications collectives</h3>
+            <p class="category-card__desc">Ouvrages co-édités avec d'autres organisations, recherches et contributions militantes.</p>
+            <span class="category-card__count">10+ ouvrages</span>
+          </a>
+
+          <a href="publications.html#affiches" class="category-card">
+            <h3 class="category-card__title">Affiches et autocollants</h3>
+            <p class="category-card__desc">Outils de sensibilisation et de mobilisation pour vos actions et permanences.</p>
+            <span class="category-card__count">8 affiches</span>
+          </a>
+
+          <a href="publications.html#packs" class="category-card">
+            <h3 class="category-card__title">Packs découverte</h3>
+            <p class="category-card__desc">Sélections thématiques à tarif réduit pour découvrir nos publications essentielles.</p>
+            <span class="category-card__count">4 packs</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Featured products -->
+      <section class="section" aria-label="Publications à la une">
+        <div class="section-header">
+          <h2 class="section-header__title">À la une</h2>
+          <a href="publications.html" class="section-header__link">Toutes les publications &rarr;</a>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="pub-card">
+            <div class="pub-card__type">Note pratique</div>
+            <h3 class="pub-card__title">Le regroupement familial</h3>
+            <p class="pub-card__desc">Conditions, procédure et recours pour faire venir sa famille en France. Mise à jour 2024.</p>
+            <div class="pub-card__meta">
+              <span class="pub-card__date">Janvier 2024</span>
+              <span class="pub-card__pages">68 pages</span>
+            </div>
+            <div class="pub-card__footer">
+              <span class="pub-card__price">12 €</span>
+              <a href="https://boutique.gisti.org/regroupement-familial" class="btn btn--primary btn--sm">Commander</a>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-card__type">Note pratique</div>
+            <h3 class="pub-card__title">Les droits des demandeurs d'asile</h3>
+            <p class="pub-card__desc">Procédure OFPRA, CNDA, conditions d'accueil et droits sociaux. Guide complet et actualisé.</p>
+            <div class="pub-card__meta">
+              <span class="pub-card__date">Novembre 2023</span>
+              <span class="pub-card__pages">84 pages</span>
+            </div>
+            <div class="pub-card__footer">
+              <span class="pub-card__price">14 €</span>
+              <a href="https://boutique.gisti.org/droits-demandeurs-asile" class="btn btn--primary btn--sm">Commander</a>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-card__type">Cahier juridique</div>
+            <h3 class="pub-card__title">La rétention administrative</h3>
+            <p class="pub-card__desc">Cadre juridique, pratiques préfectorales et stratégies contentieuses. Analyse approfondie.</p>
+            <div class="pub-card__meta">
+              <span class="pub-card__date">Septembre 2023</span>
+              <span class="pub-card__pages">120 pages</span>
+            </div>
+            <div class="pub-card__footer">
+              <span class="pub-card__price">18 €</span>
+              <a href="https://boutique.gisti.org/retention-administrative" class="btn btn--primary btn--sm">Commander</a>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-card__type">Pack découverte</div>
+            <h3 class="pub-card__title">Pack étudiant·e</h3>
+            <p class="pub-card__desc">3 notes pratiques essentielles pour comprendre le droit des étrangers. Tarif préférentiel.</p>
+            <div class="pub-card__meta">
+              <span class="pub-card__pages">3 publications</span>
+            </div>
+            <div class="pub-card__footer">
+              <span class="pub-card__price">25 € <span class="pub-card__price-old">36 €</span></span>
+              <a href="https://boutique.gisti.org/pack-etudiant" class="btn btn--primary btn--sm">Commander</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Info section about ordering -->
+      <section class="section--sm prose" aria-label="Modalités de commande">
+        <h2>Comment commander ?</h2>
+
+        <div class="info-box info-box--blue">
+          <h3 class="h5">Commande en ligne</h3>
+          <p>Notre boutique en ligne sécurisée vous permet de commander directement nos publications et de régler par carte bancaire.</p>
+          <a href="https://boutique.gisti.org" class="btn btn--primary mt-sm">Accéder à la boutique en ligne</a>
+        </div>
+
+        <h3 class="h4 mt-lg">Commande par courrier</h3>
+        <p>Vous pouvez également commander par courrier en nous adressant un chèque à l'ordre du GISTI accompagné de la liste des publications souhaitées.</p>
+        <p><strong>Adresse :</strong><br>
+        GISTI — Service publications<br>
+        3 villa Marcès<br>
+        75011 Paris</p>
+        <p><em>Frais de port : 4 € pour les commandes inférieures à 30 €, offerts au-delà.</em></p>
+
+        <h3 class="h4 mt-lg">Commandes institutionnelles</h3>
+        <p>Pour les commandes importantes (bibliothèques, associations, institutions), nous établissons des factures sur demande. Contactez-nous par mail à <a href="mailto:publications@gisti.org">publications@gisti.org</a> ou par téléphone au 01 43 14 91 60.</p>
+
+        <div class="info-box info-box--accent mt-lg">
+          <h3 class="h5">Soutenir le GISTI</h3>
+          <p>Vos achats contribuent directement au financement de nos actions : permanences juridiques, formations, contentieux, plaidoyer. Merci de votre soutien !</p>
+          <a href="a-propos.html#soutenir" class="btn btn--ghost mt-sm">Faire un don</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">GISTI</h3>
+          <p class="footer-col__desc">Groupe d'information et de soutien des immigré·e·s. Association loi 1901 créée en 1972.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Ressources</h3>
+          <ul class="footer-col__list">
+            <li><a href="pratique.html" class="footer-col__link">Guide pratique</a></li>
+            <li><a href="le-droit.html" class="footer-col__link">Actualité du droit</a></li>
+            <li><a href="formations.html" class="footer-col__link">Formations</a></li>
+            <li><a href="publications.html" class="footer-col__link">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">L'association</h3>
+          <ul class="footer-col__list">
+            <li><a href="a-propos.html" class="footer-col__link">Qui sommes-nous</a></li>
+            <li><a href="a-propos.html#soutenir" class="footer-col__link">Nous soutenir</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Contact</h3>
+          <ul class="footer-col__list">
+            <li class="footer-col__link">3 villa Marcès, 75011 Paris</li>
+            <li><a href="tel:+33143149160" class="footer-col__link">01 43 14 91 60</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; GISTI 2024 — Logiciel libre (SPIP)</p>
+        <div class="footer-bottom__links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

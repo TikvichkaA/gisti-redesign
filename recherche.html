@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recherche : titre de séjour — GISTI</title>
+  <meta name="description" content="Résultats de recherche pour 'titre de séjour' : articles, publications, dossiers, formations et ressources juridiques.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/recherche.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/img/logo-gisti.svg" alt="" class="site-logo__img" width="200" height="48">
+        <div>
+          <span class="site-logo__text">GISTI</span>
+          <span class="site-logo__tagline">Groupe d'information et de soutien des immigré·e·s</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <div class="main-nav__item"><a href="pratique.html" class="main-nav__link">Vos droits</a></div>
+        <div class="main-nav__item"><a href="dossiers.html" class="main-nav__link">Dossiers</a></div>
+        <div class="main-nav__item"><a href="publications.html" class="main-nav__link">Publications</a></div>
+        <div class="main-nav__item"><a href="formations.html" class="main-nav__link">Formations</a></div>
+        <div class="main-nav__item"><a href="le-droit.html" class="main-nav__link">Le droit</a></div>
+        <div class="main-nav__item"><a href="a-propos.html" class="main-nav__link">À propos</a></div>
+      </nav>
+      <div class="header-actions">
+        <button class="header-search-btn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <a href="a-propos.html#soutenir" class="btn btn--accent btn--sm header-donate-btn">Faire un don</a>
+        <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Search hero -->
+    <div class="search-hero">
+      <div class="container">
+        <h1 class="search-hero__title">Rechercher</h1>
+        <form class="search-bar" role="search" action="recherche.html">
+          <svg class="search-bar__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <input type="search" name="q" class="search-bar__input" placeholder="Rechercher…" aria-label="Rechercher" value="titre de séjour">
+          <button type="submit" class="btn btn--primary search-bar__submit">Rechercher</button>
+        </form>
+
+        <!-- Type counters -->
+        <div class="type-counters" role="tablist" aria-label="Filtrer par type de contenu">
+          <button class="type-counter type-counter--active" role="tab" aria-selected="true" data-type="all">
+            <span class="type-counter__label">Tout</span>
+            <span class="type-counter__count">156</span>
+          </button>
+          <button class="type-counter" role="tab" aria-selected="false" data-type="article">
+            <span class="type-counter__label">Articles</span>
+            <span class="type-counter__count">89</span>
+          </button>
+          <button class="type-counter" role="tab" aria-selected="false" data-type="publication">
+            <span class="type-counter__label">Publications</span>
+            <span class="type-counter__count">32</span>
+          </button>
+          <button class="type-counter" role="tab" aria-selected="false" data-type="dossier">
+            <span class="type-counter__label">Dossiers</span>
+            <span class="type-counter__count">12</span>
+          </button>
+          <button class="type-counter" role="tab" aria-selected="false" data-type="formation">
+            <span class="type-counter__label">Formations</span>
+            <span class="type-counter__count">8</span>
+          </button>
+          <button class="type-counter" role="tab" aria-selected="false" data-type="juridique">
+            <span class="type-counter__label">Juridique</span>
+            <span class="type-counter__count">15</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search layout: sidebar + results -->
+    <div class="container">
+      <div class="search-layout">
+
+        <!-- Sidebar: Faceted filters -->
+        <aside>
+          <div class="search-facets sidebar-sticky">
+            <h2 class="search-facets__title">Filtres</h2>
+
+            <!-- Filter group: Thème -->
+            <div class="search-facet-group">
+              <h3 class="search-facet-group__title">Thème</h3>
+              <div class="search-facet-group__items">
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="sejour">
+                  <span class="checkbox__label">Séjour</span>
+                  <span class="checkbox__count">(67)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="asile">
+                  <span class="checkbox__label">Asile</span>
+                  <span class="checkbox__count">(23)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="eloignement">
+                  <span class="checkbox__label">Éloignement</span>
+                  <span class="checkbox__count">(18)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="famille">
+                  <span class="checkbox__label">Famille</span>
+                  <span class="checkbox__count">(31)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="travail">
+                  <span class="checkbox__label">Travail</span>
+                  <span class="checkbox__count">(42)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="theme" value="droits-sociaux">
+                  <span class="checkbox__label">Droits sociaux</span>
+                  <span class="checkbox__count">(15)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Filter group: Année -->
+            <div class="search-facet-group">
+              <h3 class="search-facet-group__title">Année</h3>
+              <div class="search-facet-group__items">
+                <label class="checkbox">
+                  <input type="checkbox" name="year" value="2024">
+                  <span class="checkbox__label">2024</span>
+                  <span class="checkbox__count">(78)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="year" value="2023">
+                  <span class="checkbox__label">2023</span>
+                  <span class="checkbox__count">(45)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="year" value="2022">
+                  <span class="checkbox__label">2022</span>
+                  <span class="checkbox__count">(21)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="year" value="2021">
+                  <span class="checkbox__label">2021</span>
+                  <span class="checkbox__count">(8)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="year" value="avant-2020">
+                  <span class="checkbox__label">Avant 2020</span>
+                  <span class="checkbox__count">(4)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Filter group: Type de texte -->
+            <div class="search-facet-group">
+              <h3 class="search-facet-group__title">Type de texte</h3>
+              <div class="search-facet-group__items">
+                <label class="checkbox">
+                  <input type="checkbox" name="text-type" value="analyse">
+                  <span class="checkbox__label">Analyse</span>
+                  <span class="checkbox__count">(52)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="text-type" value="communique">
+                  <span class="checkbox__label">Communiqué</span>
+                  <span class="checkbox__count">(27)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="text-type" value="note-pratique">
+                  <span class="checkbox__label">Note pratique</span>
+                  <span class="checkbox__count">(34)</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="text-type" value="jurisprudence">
+                  <span class="checkbox__label">Jurisprudence</span>
+                  <span class="checkbox__count">(43)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main: Results list -->
+        <main>
+          <div class="search-results">
+            <p class="search-results__summary">156 résultats pour <strong>« titre de séjour »</strong></p>
+
+            <!-- Result 1: Article -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--article">Article</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Les nouvelles conditions de renouvellement des <mark>titres de séjour</mark> après la loi immigration</a>
+              </h2>
+              <p class="search-result__excerpt">
+                La loi du 26 janvier 2024 modifie profondément les conditions de délivrance et de renouvellement des <mark>titres de séjour</mark>, en durcissant notamment les exigences d'intégration républicaine…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-02-15">15 février 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Entrée et séjour</span>
+              </div>
+            </article>
+
+            <!-- Result 2: Publication -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--publication">Publication</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Guide pratique : Obtenir et renouveler son <mark>titre de séjour</mark> en 2024</a>
+              </h2>
+              <p class="search-result__excerpt">
+                Ce guide détaille les démarches pour obtenir un premier <mark>titre de séjour</mark>, les différentes catégories de titres, les pièces justificatives à fournir et les recours possibles en cas de refus…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-01-20">20 janvier 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Publication</span>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>24 pages</span>
+              </div>
+            </article>
+
+            <!-- Result 3: Article -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--article">Article</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Dématérialisation : les difficultés d'accès au renouvellement du <mark>titre de séjour</mark></a>
+              </h2>
+              <p class="search-result__excerpt">
+                Le passage à la prise de rendez-vous en ligne pour le renouvellement des <mark>titres de séjour</mark> crée des obstacles majeurs : indisponibilité chronique des créneaux, bugs de plateforme…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-01-10">10 janvier 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Entrée et séjour</span>
+              </div>
+            </article>
+
+            <!-- Result 4: Dossier -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--dossier">Dossier</span>
+              <h2 class="search-result__title">
+                <a href="article.html">La carte de résident : <mark>titre de séjour</mark> permanent de 10 ans</a>
+              </h2>
+              <p class="search-result__excerpt">
+                La carte de résident est un <mark>titre de séjour</mark> de longue durée valable 10 ans. Ce dossier examine les conditions d'obtention, les droits qu'elle confère et les cas de retrait…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2023-11-30">30 novembre 2023</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Entrée et séjour</span>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>12 articles</span>
+              </div>
+            </article>
+
+            <!-- Result 5: Formation -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--formation">Formation</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Formation : Le contentieux du refus de <mark>titre de séjour</mark></a>
+              </h2>
+              <p class="search-result__excerpt">
+                Formation de deux jours destinée aux professionnel·le·s pour maîtriser les recours contre les décisions de refus de <mark>titre de séjour</mark> : référés, recours en annulation, QPC…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-03-15">15 mars 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Formation</span>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Paris</span>
+              </div>
+            </article>
+
+            <!-- Result 6: Article -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--article">Article</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Régularisation par le travail : obtenir un <mark>titre de séjour</mark> salarié ou travailleur temporaire</a>
+              </h2>
+              <p class="search-result__excerpt">
+                Les personnes sans-papiers qui travaillent peuvent solliciter un <mark>titre de séjour</mark> par admission exceptionnelle au séjour. La circulaire de février 2024 encadre ces demandes…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-02-08">8 février 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Travail</span>
+              </div>
+            </article>
+
+            <!-- Result 7: Publication -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--publication">Publication</span>
+              <h2 class="search-result__title">
+                <a href="article.html">Analyse : Les conditions d'intégration républicaine pour l'obtention du <mark>titre de séjour</mark></a>
+              </h2>
+              <p class="search-result__excerpt">
+                La loi immigration de 2024 instaure de nouvelles conditions d'intégration pour certains <mark>titres de séjour</mark> : maîtrise du français, connaissance des valeurs républicaines…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-01-28">28 janvier 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Analyse</span>
+              </div>
+            </article>
+
+            <!-- Result 8: Juridique -->
+            <article class="search-result">
+              <span class="search-result__type search-result__type--juridique">Jurisprudence</span>
+              <h2 class="search-result__title">
+                <a href="article.html">CE, 12 février 2024 : annulation du refus de <mark>titre de séjour</mark> pour défaut de rendez-vous</a>
+              </h2>
+              <p class="search-result__excerpt">
+                Le Conseil d'État annule le refus de renouvellement d'un <mark>titre de séjour</mark> fondé sur l'impossibilité pour l'étranger d'obtenir un rendez-vous en préfecture via la plateforme dématérialisée…
+              </p>
+              <div class="search-result__meta">
+                <time datetime="2024-02-12">12 février 2024</time>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>Conseil d'État</span>
+                <span class="search-result__meta-sep" aria-hidden="true">·</span>
+                <span>N° 489012</span>
+              </div>
+            </article>
+
+            <!-- Pagination -->
+            <nav class="pagination" aria-label="Navigation des résultats">
+              <a href="#" class="pagination__link pagination__link--disabled" aria-disabled="true" aria-label="Page précédente">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Précédent
+              </a>
+              <div class="pagination__pages">
+                <a href="#" class="pagination__page pagination__page--active" aria-current="page">1</a>
+                <a href="#" class="pagination__page">2</a>
+                <a href="#" class="pagination__page">3</a>
+                <a href="#" class="pagination__page">4</a>
+                <span class="pagination__ellipsis" aria-hidden="true">…</span>
+                <a href="#" class="pagination__page">16</a>
+              </div>
+              <a href="#" class="pagination__link" aria-label="Page suivante">
+                Suivant
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </nav>
+          </div>
+        </main>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">GISTI</h3>
+          <p class="footer-col__desc">Groupe d'information et de soutien des immigré·e·s. Association loi 1901 créée en 1972.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Ressources</h3>
+          <ul class="footer-col__list">
+            <li><a href="pratique.html" class="footer-col__link">Guide pratique</a></li>
+            <li><a href="le-droit.html" class="footer-col__link">Actualité du droit</a></li>
+            <li><a href="formations.html" class="footer-col__link">Formations</a></li>
+            <li><a href="publications.html" class="footer-col__link">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">L'association</h3>
+          <ul class="footer-col__list">
+            <li><a href="a-propos.html" class="footer-col__link">Qui sommes-nous</a></li>
+            <li><a href="a-propos.html#soutenir" class="footer-col__link">Nous soutenir</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Contact</h3>
+          <ul class="footer-col__list">
+            <li class="footer-col__link">3 villa Marcès, 75011 Paris</li>
+            <li><a href="tel:+33143149160" class="footer-col__link">01 43 14 91 60</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; GISTI 2024 — Logiciel libre (SPIP)</p>
+        <div class="footer-bottom__links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Print Styles — GISTI Redesign
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Hide non-essential elements */
+  .site-header,
+  .site-footer,
+  .mobile-nav,
+  .alert-banner,
+  .skip-link,
+  .header-search,
+  .btn,
+  .search-bar,
+  .filter-bar,
+  .pagination,
+  .sidebar-widget,
+  .newsletter-form,
+  .toc,
+  nav[aria-label="Breadcrumb"],
+  .breadcrumb {
+    display: none !important;
+  }
+
+  /* Layout */
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .layout-sidebar {
+    display: block;
+  }
+
+  .layout-sidebar__aside {
+    display: none;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p, li, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Links */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+  }
+
+  /* Page breaks */
+  article {
+    page-break-before: auto;
+  }
+
+  .page-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+}

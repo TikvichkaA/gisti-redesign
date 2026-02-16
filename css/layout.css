@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Layout — GISTI Redesign
+   Container, grid, sidebar, responsive structure
+   ========================================================================== */
+
+/* --- Container --- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--space-md);
+  }
+}
+
+/* --- Content + Sidebar layout --- */
+.layout-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .layout-sidebar {
+    grid-template-columns: 1fr var(--sidebar-width);
+  }
+}
+
+.layout-sidebar__main {
+  min-width: 0; /* prevent overflow */
+}
+
+.layout-sidebar__aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* --- Full-width content --- */
+.layout-full {
+  max-width: var(--content-max);
+  margin-inline: auto;
+}
+
+/* --- Grid systems --- */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.grid-4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* --- Auto-fit grid (responsive cards) --- */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+/* --- Sticky sidebar --- */
+@media (min-width: 1024px) {
+  .sidebar-sticky {
+    position: sticky;
+    top: calc(var(--space-xl) + 60px); /* account for header */
+    align-self: start;
+  }
+}
+
+/* --- Page header (breadcrumb + title area) --- */
+.page-header {
+  padding: var(--space-lg) 0 var(--space-md);
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--space-lg);
+}
+
+.page-header__title {
+  margin-bottom: var(--space-2xs);
+}
+
+.page-header__desc {
+  color: var(--color-text-light);
+  font-size: var(--text-lg);
+  max-width: 65ch;
+}
+
+/* --- Dividers --- */
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border-light);
+  margin: var(--space-lg) 0;
+}
+
+.divider--thick {
+  border-top-width: 3px;
+  border-color: var(--color-primary);
+}

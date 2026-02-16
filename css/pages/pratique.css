@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Pratique (Ressources pratiques) — GISTI Redesign
+   ========================================================================== */
+
+/* --- Urgency banner --- */
+.urgency-section {
+  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent));
+  color: #fff;
+  padding: var(--space-xl) 0;
+}
+
+.urgency-section__icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.urgency-section__title {
+  font-size: var(--text-4xl);
+  color: #fff;
+  margin-bottom: var(--space-xs);
+}
+
+.urgency-section__text {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 65ch;
+  margin-bottom: var(--space-md);
+}
+
+.urgency-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .urgency-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.urgency-step {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.urgency-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: #fff;
+  color: var(--color-accent);
+  font-weight: var(--weight-bold);
+  border-radius: 50%;
+  margin-bottom: var(--space-xs);
+}
+
+.urgency-step__title {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
+  color: #fff;
+  margin-bottom: var(--space-3xs);
+}
+
+.urgency-step__text {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Language Switcher --- */
+.lang-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-md);
+}
+
+.lang-switcher__btn {
+  padding: var(--space-3xs) var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  background: var(--color-bg);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-default),
+              color var(--duration-fast) var(--ease-default),
+              border-color var(--duration-fast) var(--ease-default);
+}
+
+.lang-switcher__btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.lang-switcher__btn.is-active,
+.lang-switcher__btn[aria-pressed="true"] {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.lang-content {
+  display: none;
+}
+
+.lang-content.is-active {
+  display: block;
+}
+
+/* --- Asylum guide section --- */
+.asylum-guide {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.asylum-guide__title {
+  color: var(--color-primary-dark);
+}
+
+/* --- Modèles de recours grid --- */
+.recours-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 640px) {
+  .recours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .recours-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.recours-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: border-color var(--duration-fast) var(--ease-default),
+              box-shadow var(--duration-fast) var(--ease-default);
+}
+
+.recours-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.recours-card__icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8eef6;
+  border-radius: var(--radius-md);
+}
+
+.recours-card__title {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3xs);
+}
+
+.recours-card__count {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* --- Permanence section --- */
+.permanence-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 768px) {
+  .permanence-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.permanence-card__title {
+  font-size: var(--text-3xl);
+  color: #fff;
+}
+
+.permanence-card__detail {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: #cbd5e0;
+}
+
+.permanence-card__detail strong {
+  color: #fff;
+}
+
+/* --- Practical problems section --- */
+.problems-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* --- Accordion --- */
+.accordion {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.accordion__item {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.accordion__item:last-child {
+  border-bottom: none;
+}
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--duration-fast) var(--ease-default);
+}
+
+.accordion__trigger:hover {
+  background: var(--color-bg-alt);
+}
+
+.accordion__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.accordion__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform var(--duration-normal) var(--ease-default);
+}
+
+.accordion__trigger[aria-expanded="true"] .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  display: none;
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.accordion__panel[aria-hidden="false"] {
+  display: block;
+}

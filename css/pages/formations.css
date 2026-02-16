@@ -1,0 +1,194 @@
+/* ==========================================================================
+   Formations — GISTI Redesign
+   ========================================================================== */
+
+/* --- Formations hero --- */
+.formations-hero {
+  background: linear-gradient(135deg, var(--color-secondary-dark), var(--color-secondary));
+  color: #fff;
+  padding: var(--space-2xl) 0;
+}
+
+.formations-hero__title {
+  font-size: var(--text-5xl);
+  color: #fff;
+}
+
+.formations-hero__desc {
+  font-size: var(--text-xl);
+  color: #b0dce8;
+  max-width: 65ch;
+  margin-top: var(--space-xs);
+}
+
+.formations-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.formations-hero__stat {
+  text-align: center;
+}
+
+.formations-hero__stat-number {
+  display: block;
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-bold);
+  color: #fff;
+}
+
+.formations-hero__stat-label {
+  font-size: var(--text-sm);
+  color: #b0dce8;
+}
+
+/* --- Formation card --- */
+.formation-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  transition: border-color var(--duration-fast) var(--ease-default),
+              box-shadow var(--duration-fast) var(--ease-default);
+}
+
+.formation-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-md);
+}
+
+.formation-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.formation-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  line-height: var(--leading-snug);
+}
+
+.formation-card__format {
+  flex-shrink: 0;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.formation-card__format--presentiel {
+  background: #e0f0f4;
+  color: var(--color-secondary);
+}
+
+.formation-card__format--distanciel {
+  background: #e8eef6;
+  color: var(--color-primary);
+}
+
+.formation-card__format--webinaire {
+  background: #fef3cd;
+  color: #856404;
+}
+
+.formation-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+}
+
+.formation-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.formation-card__detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.formation-card__price {
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+}
+
+.formation-card__places {
+  color: var(--color-success);
+  font-weight: var(--weight-medium);
+}
+
+.formation-card__places--limited {
+  color: var(--color-warning);
+}
+
+.formation-card__places--full {
+  color: var(--color-error);
+}
+
+/* --- Format sections --- */
+.format-card {
+  padding: var(--space-lg);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-secondary);
+  text-align: center;
+}
+
+.format-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.format-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2xs);
+}
+
+.format-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+/* --- CTA sur mesure --- */
+.formation-cta {
+  background: var(--color-secondary);
+  color: #fff;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.formation-cta__title {
+  font-size: var(--text-3xl);
+  color: #fff;
+  margin-bottom: var(--space-xs);
+}
+
+.formation-cta__text {
+  font-size: var(--text-lg);
+  color: #b0dce8;
+  max-width: 55ch;
+  margin: 0 auto var(--space-md);
+}
+
+.formation-cta .btn {
+  background: #fff;
+  color: var(--color-secondary);
+}

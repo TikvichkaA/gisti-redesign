@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Article Page — GISTI Redesign
+   ========================================================================== */
+
+/* --- Article header --- */
+.article-header {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--space-lg);
+}
+
+.article-header__type {
+  display: inline-block;
+  margin-bottom: var(--space-xs);
+}
+
+.article-header__title {
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  max-width: 75ch;
+}
+
+.article-header__lead {
+  font-size: var(--text-xl);
+  color: var(--color-text-light);
+  line-height: var(--leading-relaxed);
+  max-width: 65ch;
+  margin-top: var(--space-sm);
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.article-meta__author {
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+}
+
+.article-meta__separator {
+  color: var(--color-border);
+}
+
+/* --- Article body --- */
+.article-body {
+  padding-bottom: var(--space-xl);
+}
+
+/* --- Article keywords --- */
+.article-keywords {
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.article-keywords__title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+/* --- Related articles --- */
+.related-articles {
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* --- TOC (sidebar) --- */
+.toc {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--color-primary);
+}
+
+.toc__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.toc__link {
+  display: block;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: color var(--duration-fast) var(--ease-default),
+              background var(--duration-fast) var(--ease-default);
+}
+
+.toc__link:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 95, 0.06);
+}
+
+.toc__link.is-active {
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+  background: rgba(30, 58, 95, 0.08);
+}
+
+.toc__link--h3 {
+  padding-left: var(--space-md);
+  font-size: var(--text-xs);
+}
+
+/* --- Section nav (sidebar) --- */
+.section-nav {
+  padding: var(--space-md);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+}
+
+.section-nav__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.section-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.section-nav__link {
+  display: block;
+  padding: var(--space-3xs) var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.section-nav__link:hover {
+  color: var(--color-primary);
+  background: rgba(30, 58, 95, 0.06);
+}
+
+.section-nav__link--active {
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+}
+
+/* --- Sidebar CTA --- */
+.sidebar-cta {
+  padding: var(--space-md);
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  border-radius: var(--radius-lg);
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar-cta__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: #fff;
+  margin-bottom: var(--space-2xs);
+}
+
+.sidebar-cta__text {
+  font-size: var(--text-sm);
+  color: #cbd5e0;
+  margin-bottom: var(--space-sm);
+}
+
+.sidebar-cta .btn {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+.sidebar-cta .btn:hover {
+  background: #f7fafc;
+}
